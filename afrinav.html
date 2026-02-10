@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .row {
+            display: flex;
+            background-color: #13A9D6;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: start;
+            padding: 20px;
+            
+        }
+
+        .link {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            gap: 10px;
+            
+        }
+.social {
+            display: flex;
+            justify-content: end;
+            padding: 20px;
+            gap: 20px;
+            padding: 30px;
+        }
+        .link a {
+            text-decoration: none;
+            color: #383B40;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        .row1{
+    display: flex;
+    background-color:#383B40 ;
+    padding: 20px 0px;
+    
+        }
+        .im1{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .contact{
+          display: inline-block;
+         max-width: 600px;
+padding: 80px 70px;
+          margin-left: 400px;
+        }
+.contact form{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:space-between;
+
+}
+
+.contact form label{
+   min-width: 48%;
+   margin-bottom: 10px;
+   
+   
+}
+.contact form input[type="text"], select{
+    min-width:45%;
+    margin-bottom:10px;
+    padding:10px;
+}
+.contact form input[type="email"], select{
+    min-width:45%;
+    margin-bottom:10px;
+    padding:10px;
+}
+.contact input[type="submit"]{
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.fotter{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.1rem;
+
+}
+       .col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo, .link, .social {
+        width: 100%;
+        justify-content: center;
+        padding: 15px;
+    }
+    
+    .link {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .link a {
+        font-size: 18px;
+    }
+    
+    .social {
+        justify-content: center;
+        padding: 15px;
+    }
+    
+    .row1 {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    
+    .im1 {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .im1 img {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .contact {
+        margin-left: 0;
+        padding: 30px 20px;
+        max-width: 100%;
+    }
+    
+    .contact form input[type="text"],
+    .contact form input[type="email"] {
+        min-width: 100%;
+    }
+    
+    .contact form label {
+        min-width: 100%;
+    }
+    
+    h1 {
+        font-size: 24px !important;
+        padding: 20px !important;
+    }
+    
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, 
+    .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .link a {
+        font-size: 16px;
+    }
+    
+    .contact {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 20px !important;
+        padding: 15px !important;
+    }
+    
+    .logo img, .social img {
+        width: 25px !important;
+        height: 25px !important;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <!-- start of header -->
+    <div class="row">
+        <div class="logo col-3">
+            <img src="images/946.jpg" alt="logo" style="width: 50px; height: 50px;">
+        </div>
+        <div class="link col-6">
+            <a href="http://127.0.0.1:5500/afrinav.html#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+        </div>
+        <div class="social col-3">
+            <a href="https://www.google.com/"><img src="images/dribbble.png" alt="social icon" style="width: 30px; height: 30px;"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="social icon" style="width: 30px; height: 30px;"></a>
+        </div>
+    </div>
+    <!-- end of header -->
+    <!-- start of body  --> <h1 style="background-color: #383B40; padding: 30px; color: white; text-align: center; margin:0px; font-family: 'Twinkle Star', cursive; font-weight: lighter;">Art Gallery</h1>
+    
+<div class="row1">
+    
+    <div class=" im1 col-4">
+        <img  src="images/digital-art-isolated-house.jpg" alt="" style="width: 260px; height: 260px;">
+    </div>
+    <div class=" im1 col-4">
+        <img  src="images/portrait-adult-woman-digital-art-style.jpg" alt="" style="width: 260px; height: 260px;">
+    </div>
+    <div class=" im1 col-4">
+        <img  src="images/psychedelic-girl-illustration.jpg" alt="" style="width: 260px; height: 260px;">
+    </div>
+</div>
+<!-- end of body -->
+ <!-- start of registration -->
+<div class="contact">
+    <h1 style="color: #04AA6D; text-align: center; "> Contact Us</h1>
+    <form action="">
+<label for="fullname">FullName</label>
+<input type="text" id="fullname" name="fullname"requred> <br> <br>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required> <br> <br>
+<input type="submit" value="submit">
+</form>
+</div>
+
+
+<div class="fotter">
+    <p>Copyright &copy; 2026, Afrinnnnnn</p>
+</div>
+</body>
+
+</html>
